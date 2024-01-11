@@ -1,0 +1,98 @@
+$top-color: white;
+$bottom-color: #FFD49F;
+
+%top-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   @extend %top-font; 
+}
+h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: #95551F;
+    text-wrap: balance;
+    line-height: 65px;
+}
+h5{
+    @extend %top-font;
+    font-weight: 600;
+    font-size: 16px;  
+}
+p{
+  @extend %top-font;
+  font-size: 18px;  
+  line-height: 24px; 
+  font-weight: 600;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+%js-cn-sp-btw{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.header__top-inner{
+    @extend %js-cn-sp-btw;
+    background-color: $top-color;
+    align-items: center;
+    padding: 20px 45px;
+
+}
+nav{
+    padding: 0px 150px;
+    ul{
+        @extend %js-cn-sp-btw;  
+    }
+    li{
+    margin-left: 75px;
+        a{
+            color: black;
+            @extend %top-font;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    li:first-child{
+        margin-left: 0px;
+    }
+}
+.navbar{
+    ul{
+        @extend %js-cn-sp-btw; 
+        & > *:not(:first-child){
+            margin-left: 45px;
+        } 
+    }
+}
+.header__bottom-inner{
+    background-image: url(../../img/HeroSection.jpg);
+    height: 80svh;
+}
+.advertising-offer{
+    display: inline-block;
+    background-color: $bottom-color;
+    width: 650px;
+    padding: 32px 48px;
+    margin: 65px 80px;
+    border-radius: 24px;
+    & > *:not(:first-child){
+        margin-top: 22px;
+    }
+    button{
+        border: none;
+        background-color: #95551F;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        padding: 25px 72px;
+    }
+}
