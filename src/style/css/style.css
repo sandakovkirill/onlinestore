@@ -1,4 +1,4 @@
-body, h5, p, nav li a {
+body, h5, h2, h3, p, nav li a {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -15,6 +15,16 @@ h5 {
   font-size: 16px;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
 p {
   font-size: 18px;
   line-height: 24px;
@@ -29,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-.header__top-inner, nav ul, .navbar ul {
+.header__top-inner, nav ul, .navbar ul, .browse-the-range__elements {
   display: flex;
   justify-content: space-between;
 }
@@ -87,4 +97,21 @@ nav li:first-child {
   font-weight: 700;
   color: white;
   padding: 25px 72px;
+}
+
+.browse-the-range {
+  margin-top: 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.browse-the-range__elements {
+  text-align: center;
+}
+
+.category-title {
+  margin-top: 15px;
 }

@@ -33,8 +33,8 @@
                             <ul>
                                 <li class="navbar__element"> <img src="icons/user.svg" alt="user-icon"></li>
                                 <li class="navbar__element"> <img src="icons/Cart.svg" alt="shop-basket"></li>
-                                <li class="navbar__element"> <img src="icons/Cart.svg" alt="shop-basket"></li>
-                                <li class="navbar__element"> <img src="icons/Cart.svg" alt="shop-basket"></li>
+                                <li class="navbar__element"> <img src="icons/Search.svg" alt="shop-basket"></li>
+                                <li class="navbar__element"> <img src="icons/Favourite.svg" alt="shop-basket"></li>
                             </ul>
                         </div>
                     </div>
@@ -54,5 +54,42 @@
             </div>
         </div>
     </header>
+    <section class="browse-the-range">
+        <div class="container">
+            <div class="browse-the-range__innner">
+                <div class="section-title">
+                    <h2>Browse The Range</h2>
+                </div>
+                <div class="browse-the-range__inner">
+                    <div class="browse-the-range__elements">
+                        <div class="browse-the-range__element">
+                            <div class="category-image">
+                                <img src="img/living-room.png" alt="">
+                            </div>
+                            <div class="category-title">
+                                <h3>Living</h3>
+                            </div>    
+                        </div>
+                        <div class="browse-the-range__element">
+                            <div class="category-image">
+                                <img src="img/dining-room.png" alt="">
+                            </div>
+                            <div class="category-title">
+                                <h3>Dining</h3>
+                            </div>
+                        </div>
+                        <div class="browse-the-range__element">
+                            <div class="category-image">
+                                    <img src="img/bedroom.png" alt=""> 
+                            </div>
+                            <div class="category-title">
+                                <h3>Bedroom</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
 </body>
 </html>
