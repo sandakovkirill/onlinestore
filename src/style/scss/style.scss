@@ -30,6 +30,11 @@ h3{
     font-weight: 600;
     font-size: 24px;
 }
+h4{
+    @extend %top-font;
+    font-weight: 600;
+    font-size: 20px;
+}
 p{
   @extend %top-font;
   font-size: 18px;  
@@ -49,6 +54,14 @@ a{
 .container{
     width: 1440px;
     margin: 0 auto;
+}
+.show-more{
+    border: 1px solid #7F4E25;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7F4E25;
+    padding: 10px 40px;
 }
 .header__top-inner{
     @extend %js-cn-sp-btw;
@@ -106,12 +119,15 @@ nav{
         padding: 25px 72px;
     }
 }
+section{
+    margin-bottom: 50px;
+}
 .browse-the-range{
     margin-top: 50px;
 }
 .section-title{
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 .browse-the-range__elements{
     @extend %js-cn-sp-btw;
@@ -119,4 +135,28 @@ nav{
 }
 .category-title{
     margin-top: 15px;
+}
+.browse-the-range__inner{
+    padding: 0px 50px;
+}
+.our-products__inner{
+    padding: 0px 75px;
+}
+.our-products__items{
+    @extend %js-cn-sp-btw;  
+}
+.our-product-content{
+    & > *:not(:first-child){
+        margin-top: 8px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        color: #898989;
+    }
+}
+.our-products__button-container{
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
 }
