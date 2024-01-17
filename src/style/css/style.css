@@ -10,6 +10,10 @@ button {
   display: none;
 }
 
+.display-block {
+  display: block;
+}
+
 h1 {
   font-size: 56px;
   font-weight: 700;
@@ -291,6 +295,13 @@ section {
 }
 .loginreg-form .form-autorisation__bottom .authLinks {
   text-align: right;
+}
+.loginreg-form .form-autorisation__bottom .authLinks button {
+  width: 100%;
+  padding: 0px;
+  padding-top: 5px;
+  border: none;
+  background-color: white;
 }
 
 .form-registration__bottom button {

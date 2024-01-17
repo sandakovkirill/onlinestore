@@ -15,7 +15,7 @@
         <div class="container">
             <div class="login-user__inner">
                 <div class="login-user__items">
-                    <form action="#" class="loginreg-form display-none">
+                    <form action="#" id="logForm" class="loginreg-form">
                     <div class="button-back">
                         <div class="button-back">
                             <a href="index.php">Назад</a>
@@ -31,12 +31,11 @@
                                 <button>Войти</button>
                             </div>
                             <div class="authLinks">
-                                <a href="">Забыли пароль?</a>
-                                <a href="">Зарегистрироваться</a>
+                                <button href="" class="changeButton" >Зарегистрироваться</button>
                             </div>
                         </div>
                     </form>
-                    <form action="#" class="loginreg-form">
+                    <form action="#" id="regForm" class="loginreg-form display-none">
                         <div class="button-back">
                             <a href="index.php">Назад</a>
                         </div>
@@ -56,4 +55,5 @@
         </div>
     </div>
 </body>
+<script src="scripts/user_authentication.Js"></script>
 </html>

@@ -292,4 +292,5 @@
         </div>
     </footer>
 </body>
+<script src = "scripts/slider.js"></script>
 </html>
