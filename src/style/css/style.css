@@ -2,6 +2,14 @@ body, h5, h2, h3, h4, p, nav li a {
   font-family: 'Poppins', sans-serif;
 }
 
+button {
+  background-color: white;
+}
+
+.display-none {
+  display: none;
+}
+
 h1 {
   font-size: 56px;
   font-weight: 700;
@@ -44,7 +52,7 @@ a {
   text-decoration: none;
 }
 
-.header__top-inner, nav ul, .navbar ul, .browse-the-range__elements, .our-products__items, .our-features__items, .our-features__item, .elements-footer {
+.header__top-inner, nav ul, .navbar ul, .browse-the-range__elements, .our-products__items, .our-features__items, .our-features__item, .elements-footer, .loginreg-form .form-autorisation__bottom {
   display: flex;
   justify-content: space-between;
 }
@@ -237,4 +245,58 @@ section {
   border-radius: 6px;
   font-weight: 500;
   color: white;
+}
+
+.login-user__items {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+
+.loginreg-form {
+  width: 300px;
+}
+.loginreg-form .button-back {
+  margin-bottom: 25px;
+}
+.loginreg-form .button-back a {
+  color: black;
+}
+.loginreg-form .button-back button {
+  border: none;
+  color: inherit;
+}
+.loginreg-form .title-form {
+  margin-bottom: 30px;
+}
+.loginreg-form input {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #ced0d6;
+  padding-right: 70px;
+}
+.loginreg-form .form-autorisation__bottom a {
+  display: block;
+  color: black;
+}
+.loginreg-form .form-autorisation__bottom button {
+  background-color: #FDEBD6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.loginreg-form .form-autorisation__bottom .authLinks {
+  text-align: right;
+}
+
+.form-registration__bottom button {
+  background-color: #FDEBD6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
 }

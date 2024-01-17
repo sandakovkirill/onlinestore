@@ -31,7 +31,7 @@
                         </nav>
                         <div class="navbar">
                             <ul>
-                                <li class="navbar__element"> <img src="icons/user.svg" alt="user-icon"></li>
+                                <a href="login_page.php"><li class="navbar__element"> <img src="icons/user.svg" alt="user-icon"></li></a>
                                 <li class="navbar__element"> <img src="icons/Cart.svg" alt="shop-basket"></li>
                                 <li class="navbar__element"> <img src="icons/Search.svg" alt="shop-basket"></li>
                                 <li class="navbar__element"> <img src="icons/Favourite.svg" alt="shop-basket"></li>

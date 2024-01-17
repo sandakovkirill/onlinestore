@@ -8,6 +8,12 @@ $bottom-color: #FFD49F;
 body{
    @extend %top-font; 
 }
+button{
+    background-color: white;
+}
+.display-none{
+    display: none;
+}
 h1{
     font-size: 56px;
     font-weight: 700;
@@ -257,5 +263,61 @@ section{
         border-radius: 6px;
         font-weight: 500;
         color: white;
+    }
+}
+.login-user__items{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+}
+.loginreg-form{
+    width: 300px;
+   .button-back{
+    margin-bottom: 25px;
+    a{
+        color: black;
+    }
+    button{
+        border: none;
+        color:  inherit;
+    }
+   }
+   .title-form{
+    margin-bottom: 30px;
+   }
+   input{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ced0d6;
+    padding-right: 70px;
+   }
+   .form-autorisation__bottom{
+    @extend %js-cn-sp-btw;
+    a{
+        display: block;
+        color: black;
+    }
+    button{
+        background-color: #FDEBD6;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    .authLinks{
+        text-align: right;
+    }
+   }
+}
+.form-registration__bottom{
+    button{
+        background-color: #FDEBD6;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
     }
 }
