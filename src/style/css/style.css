@@ -282,6 +282,16 @@ section {
   border-bottom: 1px solid #ced0d6;
   padding-right: 70px;
 }
+.loginreg-form .error-border {
+  border: 2px solid red;
+  margin-bottom: 0px;
+}
+.loginreg-form .error-message {
+  margin: 10px 0px;
+}
+.loginreg-form .error-message p {
+  font-size: 16px;
+}
 .loginreg-form .form-autorisation__bottom a {
   display: block;
   color: black;
@@ -299,7 +309,7 @@ section {
 .loginreg-form .form-autorisation__bottom .authLinks button {
   width: 100%;
   padding: 0px;
-  padding-top: 5px;
+  margin-bottom: 5px;
   border: none;
   background-color: white;
 }

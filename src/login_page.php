@@ -24,30 +24,42 @@
                         <div class="title-form">
                             <h3>Авторизация</h3>
                         </div>
-                        <input type="text" value="Почта">
-                        <input type="text" value="Пароль">
+                        <input type="text" placeholder="Введите ваш email" name="email">
+                        <input type="text" placeholder="Введите ваш пароль" name="password">
                         <div class="form-autorisation__bottom">
                             <div class="login-button">
-                                <button>Войти</button>
+                                <button id="button-reg">Войти</button>
                             </div>
                             <div class="authLinks">
                                 <button href="" class="changeButton" >Зарегистрироваться</button>
+                                <a href="">Забыли пароль?</a>
                             </div>
                         </div>
                     </form>
-                    <form action="#" id="regForm" class="loginreg-form display-none">
+                    <form action="scripts/phpreg-script.php" id="regForm" class="loginreg-form display-none" method="post">
                         <div class="button-back">
                             <a href="index.php">Назад</a>
                         </div>
                             <div class="title-form"><h3>Регистрация</h3>
                         </div>
-                        <input type="text" value="Почта">
-                        <input type="text" value="Имя">
-                        <input type="text" value="Фамилия">
-                        <input type="text" value="Пароль">
-                        <input type="text" value="Подтверждения пароля">
+                        <input type="text" name="email" placeholder="Введите ваш email" class="registration-input" > 
+                        <div class="error-message display-none">
+                            <p class="error-message-text">Error message</p>
+                        </div>
+                        <input type="text" name="username" placeholder="Введите ваш логин" class="registration-input" >
+                        <div class="error-message display-none">
+                            <p class="error-message-text">Error message</p>
+                        </div>
+                        <input type="text" name="password" placeholder="Введите пароль" class="registration-input">
+                        <div class="error-message display-none">
+                            <p class="error-message-text">Error message</p>
+                        </div>
+                        <input type="text" name="verificationPassword" placeholder="Подтвердите ваш пароль" class="registration-input">
+                        <div class="error-message display-none">
+                            <p class="error-message-text">Error message</p>
+                        </div>
                         <div class="form-registration__bottom">
-                            <button>Зарегистрироваться</button>
+                            <button type="submit" class="button-reg">Зарегистрироваться</button>
                         </div>
                     </form>
                 </div>
