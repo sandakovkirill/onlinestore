@@ -24,14 +24,20 @@
                         <div class="title-form">
                             <h3>Авторизация</h3>
                         </div>
-                        <input type="text" placeholder="Введите ваш email" name="email">
-                        <input type="text" placeholder="Введите ваш пароль" name="password">
+                        <input type="text" placeholder="Введите ваш email" name="email" class="form-input">
+                        <div class="error-message display-none">
+                            <p class="error-message-text">Error message</p>
+                        </div>
+                        <input type="text" placeholder="Введите ваш пароль" name="password" class="form-input">
+                        <div class="error-message display-none">
+                            <p class="error-message-text">Error message</p>
+                        </div>
                         <div class="form-autorisation__bottom">
                             <div class="login-button">
-                                <button id="button-reg">Войти</button>
+                                <button id="button-authorization" type="submit">Войти</button>
                             </div>
                             <div class="authLinks">
-                                <button href="" class="changeButton" >Зарегистрироваться</button>
+                                <button href="" class="changeButton">Зарегистрироваться</button>
                                 <a href="">Забыли пароль?</a>
                             </div>
                         </div>
@@ -42,19 +48,19 @@
                         </div>
                             <div class="title-form"><h3>Регистрация</h3>
                         </div>
-                        <input type="text" name="email" placeholder="Введите ваш email" class="registration-input" > 
+                        <input type="text" name="email" placeholder="Введите ваш email" class="form-input" > 
                         <div class="error-message display-none">
                             <p class="error-message-text">Error message</p>
                         </div>
-                        <input type="text" name="username" placeholder="Введите ваш логин" class="registration-input" >
+                        <input type="text" name="username" placeholder="Введите ваш логин" class="form-input" >
                         <div class="error-message display-none">
                             <p class="error-message-text">Error message</p>
                         </div>
-                        <input type="text" name="password" placeholder="Введите пароль" class="registration-input">
+                        <input type="text" name="password" placeholder="Введите пароль" class="form-input">
                         <div class="error-message display-none">
                             <p class="error-message-text">Error message</p>
                         </div>
-                        <input type="text" name="verificationPassword" placeholder="Подтвердите ваш пароль" class="registration-input">
+                        <input type="text" name="verificationPassword" placeholder="Подтвердите ваш пароль" class="form-input">
                         <div class="error-message display-none">
                             <p class="error-message-text">Error message</p>
                         </div>
