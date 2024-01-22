@@ -16,4 +16,5 @@
     } else{
         $mysqli -> query($require);
     }
+    mysqli_close($mysqli);
 ?>

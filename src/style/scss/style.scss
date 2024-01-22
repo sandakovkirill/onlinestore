@@ -38,6 +38,9 @@ h3{
     @extend %top-font;
     font-weight: 600;
     font-size: 24px;
+    &::first-letter{
+        text-transform: uppercase;
+    } 
 }
 h4{
     @extend %top-font;

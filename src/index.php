@@ -98,38 +98,9 @@
                     <h2>Our products</h2>
                 </div>
                 <div class="our-products__items">
-                    <div class="our-products__item">
-                        <div class="our-products-image"><img src="img/Luxury big sofa.png" alt=""></div>
-                        <div class="our-product-content">
-                            <div class="title-product-category"><h3>Sofa</h3></div>
-                            <div class="title-product"><p>Luxury big sofa</p></div>
-                            <div class="product-price"><h4>₹ 2500</h4></div>
-                        </div>
-                    </div>
-                    <div class="our-products__item">
-                        <div class="our-products-image"> <img src="img/Luxury big sofa.png" alt=""></div>
-                        <div class="our-product-content">
-                            <div class="title-product-category"><h3>Sofa</h3></div>
-                            <div class="title-product"><p>Luxury big sofa</p></div>
-                            <div class="product-price"><h4>₹ 2500</h4></div>
-                        </div>
-                    </div>
-                    <div class="our-products__item">
-                        <div class="our-products-image"> <img src="img/Luxury big sofa.png" alt=""></div>
-                        <div class="our-product-content">
-                            <div class="title-product-category"><h3>Sofa</h3></div>
-                            <div class="title-product"><p>Luxury big sofa</p></div>
-                            <div class="product-price"><h4>₹ 2500</h4></div>
-                        </div>
-                    </div>
-                    <div class="our-products__item">
-                        <div class="our-products-image"> <img src="img/Luxury big sofa.png" alt=""></div>
-                        <div class="our-product-content">
-                            <div class="title-product-category"><h3>Sofa</h3></div>
-                            <div class="title-product"><p>Luxury big sofa</p></div>
-                            <div class="product-price"><h4>₹ 2500</h4></div>
-                        </div>
-                    </div>
+                    <?php
+                    require_once('scripts/slider.php')
+                    ?>
                 </div>
                 <div class="our-products__button-container">
                 <button class="show-more">Show More</button>
