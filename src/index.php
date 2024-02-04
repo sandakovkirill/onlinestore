@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    $loginStatus = isset($_SESSION['LoginStatus']) ? $_SESSION['LoginStatus'] : false;
+    if ($loginStatus == true) {
+        $userPage = 'user_info.php';
+        $userRole = $_SESSION['userRole'];
+    } else {
+        $userPage = 'login_page.php';
+        $userEmail = null;
+        $userRole = null;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +28,31 @@
         <div class="header__inner">
             <div class="header__top">
                 <div class="container">
+                    <div class="modal">
+                        <script>
+                            function openModal() {
+                                document.querySelector('.modal').style.display = 'flex';
+                            }
+                    
+                            function closeModal() {
+                                document.querySelector('.modal').style.display = 'none';
+                            }
+                        </script>
+                        <div class="modal__inner">
+                            <div class="modal__top">
+                                <div class="modal-title"><h3>Shopping Cart</h3></div>
+                                <div class="button-close"><button onclick="closeModal()">x</button></div>
+                            </div>
+                            <div class="modal__body">
+                                <div class="modal-body-content"></div>
+                                <div class="subtotal"><p>Subtotal</p></div>
+                            </div>
+                            <div class="modal__bottom">
+                                <button>Cart</button>
+                                <button>Checkout</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="header__top-inner">
                         <div class="logo">
                             <img src="icons/Logo.svg" alt="logo-company">
@@ -31,8 +68,8 @@
                         </nav>
                         <div class="navbar">
                             <ul>
-                                <a href="login_page.php"><li class="navbar__element"> <img src="icons/user.svg" alt="user-icon"></li></a>
-                                <li class="navbar__element"> <img src="icons/Cart.svg" alt="shop-basket"></li>
+                                <a href="<?php echo $userPage; ?>"><li class="navbar__element"> <img src="icons/user.svg" alt="user-icon"></li></a>
+                                <li class="navbar__element"> <img src="icons/Cart.svg" alt="shop-basket" onclick="openModal()"></li>
                                 <li class="navbar__element"> <img src="icons/Search.svg" alt="shop-basket"></li>
                                 <li class="navbar__element"> <img src="icons/Favourite.svg" alt="shop-basket"></li>
                             </ul>
@@ -264,4 +301,5 @@
     </footer>
 </body>
 <script src = "scripts/slider.js"></script>
+<script src = "scripts/shop-cart.js"></script>
 </html>

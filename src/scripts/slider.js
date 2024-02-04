@@ -4,3 +4,10 @@ buttonShowMore.addEventListener('click', function() {
     let clone = ourProductsItem.cloneNode(true);
     ourProductsItem.after(clone);
   });
+  function openModal() {
+    document.querySelector('.modal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.querySelector('.modal').style.display = 'none';
+}

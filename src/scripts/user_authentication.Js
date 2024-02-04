@@ -62,13 +62,14 @@ logForm.addEventListener('submit', function(event){
         errorMessage[0].classList.add('display-block')
         errorMessageText[0].textContent = 'Поле email должно быть в формате адреса электронной почты.';
         isFormValid = false;
-    }if(registrationInput[1].value <= 8){
+    }if(registrationInput[1].value.length <= 8){
         registrationInput[1].classList.add('error-border');
         errorMessage[1].classList.add('display-block')
         errorMessageText[1].textContent = 'Вы ввели неверный пароль';
+        isFormValid = false;
     }
     if (isFormValid) {
-        regForm.submit(); // Отправка формы
+        logForm.submit(); // Отправка формы
     }
 });
 

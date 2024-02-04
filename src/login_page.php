@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
         <div class="container">
             <div class="login-user__inner">
                 <div class="login-user__items">
-                    <form action="#" id="logForm" class="loginreg-form">
+                    <form action="scripts/phpaunt-script.php" id="logForm" class="loginreg-form" method="post">
                     <div class="button-back">
                         <div class="button-back">
                             <a href="index.php">Назад</a>
